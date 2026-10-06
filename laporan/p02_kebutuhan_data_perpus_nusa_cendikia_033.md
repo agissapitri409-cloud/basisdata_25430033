@@ -24,6 +24,8 @@ Oleh karena itu, diperlukan perancangan sistem basis data relasional **`perpus_n
 | **AKT-02** | Anggota Perpustakaan | Melakukan pencarian buku, meminjam buku, serta mengembalikan buku sesuai batas waktu yang ditentukan. |
 | **AKT-03** | Kepala Perpustakaan | Mengakses rekapitulasi statistik peminjaman dan meninjau laporan denda bulanan untuk keperluan evaluasi. |
 
+![Tabel Aktor Sistem](<image/tabel_aktor_sistem.png>)
+
 ### B. Tabel Proses Bisnis (PB-xx)
 | Kode PB | Nama Proses Bisnis | Deskripsi Ringkas | Aktor Terlibat |
 | :--- | :--- | :--- | :--- |
@@ -153,4 +155,4 @@ Oleh karena itu, diperlukan perancangan sistem basis data relasional **`perpus_n
 - **Link Repositori:** https://github.com/agissapitrr/basisdata_25430033
 - **Tangkapan Layar Git Log:**
 
-![Bukti Git Log Modul 2 Nusa Cendekia](img/tangkapan_layar_Git_log_laporan_25430033.png)
+![Bukti Git Log Modul 2 Nusa Cendekia](<image/git_log_perpus_nusa_cendekiawa.png>)

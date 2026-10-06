@@ -151,4 +151,4 @@ Guna mengatasi tantangan operasional tersebut, dirancang sistem basis data relas
 - **Link Repositori:** https://github.com/agissapitrr/basisdata_25430033
 - **Tangkapan Layar Git Log:**
 
-![Bukti Git Log Modul 2](img/tangkapan_layar_Git_log_laporan_25430033.png)
+![Bukti Git Log Modul 2](<image/tangkapan_layar_git_log_kopma_033.png>)
