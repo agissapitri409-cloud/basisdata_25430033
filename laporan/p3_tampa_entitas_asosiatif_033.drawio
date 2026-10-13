@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Halaman-1" id="AZwfGj8nKrG_iOaEUzQV">
+    <mxGraphModel dx="1680" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="judul" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=18;fontColor=#0D2B5E;" value="Relasi M:N langsung antara penjualan dan barang (tanpa entitas asosiatif)" vertex="1">
+          <mxGeometry height="40" width="1140" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t_penjualan" parent="1" style="swimlane;fontStyle=1;startSize=32;rounded=1;arcSize=8;fillColor=#1E8449;fontColor=#FFFFFF;strokeColor=#1E8449;strokeWidth=2;swimlaneFillColor=#FFFFFF;fontSize=14;collapsible=0;" value="penjualan" vertex="1">
+          <mxGeometry height="176" width="360" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pj1" parent="t_penjualan" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;fontStyle=1;" value="[PK]  id_penjualan : INT, AI" vertex="1">
+          <mxGeometry height="24" width="360" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pj2" parent="t_penjualan" style="text;strokeColor=none;fillColor=#F5F7FA;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="no_nota_penjualan : CHAR(12), UNIQUE" vertex="1">
+          <mxGeometry height="24" width="360" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="pj3" parent="t_penjualan" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="tgl_penjualan : DATETIME, NOT NULL" vertex="1">
+          <mxGeometry height="24" width="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pj4" parent="t_penjualan" style="text;strokeColor=none;fillColor=#F5F7FA;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;fontStyle=1;" value="[FK]  id_petugas : SMALLINT → petugas" vertex="1">
+          <mxGeometry height="24" width="360" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="pj5" parent="t_penjualan" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;fontStyle=1;" value="[FK]  id_anggota : INT → anggota, NULL" vertex="1">
+          <mxGeometry height="24" width="360" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="pj6" parent="t_penjualan" style="text;strokeColor=none;fillColor=#F5F7FA;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="bayar_penjualan : DECIMAL(12,2), NOT NULL" vertex="1">
+          <mxGeometry height="24" width="360" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="t_barang" parent="1" style="swimlane;fontStyle=1;startSize=32;rounded=1;arcSize=8;fillColor=#C62828;fontColor=#FFFFFF;strokeColor=#C62828;strokeWidth=2;swimlaneFillColor=#FFFFFF;fontSize=14;collapsible=0;" value="barang" vertex="1">
+          <mxGeometry height="200" width="360" x="800" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="br1" parent="t_barang" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;fontStyle=1;" value="[PK]  id_barang : INT, AI" vertex="1">
+          <mxGeometry height="24" width="360" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="br2" parent="t_barang" style="text;strokeColor=none;fillColor=#F5F7FA;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="kode_barang : VARCHAR(10), UNIQUE" vertex="1">
+          <mxGeometry height="24" width="360" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="br3" parent="t_barang" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="nama_barang : VARCHAR(100), NOT NULL" vertex="1">
+          <mxGeometry height="24" width="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="br4" parent="t_barang" style="text;strokeColor=none;fillColor=#F5F7FA;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="kategori_barang : ENUM(ATK/makanan/minuman)" vertex="1">
+          <mxGeometry height="24" width="360" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="br5" parent="t_barang" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="harga_jual_barang : DECIMAL(12,2), CHECK &gt;= 0" vertex="1">
+          <mxGeometry height="24" width="360" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="br6" parent="t_barang" style="text;strokeColor=none;fillColor=#F5F7FA;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="stok_barang : INT, CHECK &gt;= 0" vertex="1">
+          <mxGeometry height="24" width="360" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="br7" parent="t_barang" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;" value="stok_min_barang : INT, DEF 5" vertex="1">
+          <mxGeometry height="24" width="360" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="t_penjualan" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERzeroToMany;endArrow=ERzeroToMany;startFill=0;endFill=0;strokeColor=#1A237E;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#1A237E;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;" target="t_barang" value="M:N langsung">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1a" connectable="0" parent="e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;fontColor=#0D2B5E;labelBackgroundColor=#FFFFFF;" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.85" y="14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1b" connectable="0" parent="e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;fontColor=#0D2B5E;labelBackgroundColor=#FFFFFF;" value="M" vertex="1">
+          <mxGeometry relative="1" x="0.85" y="14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lost" parent="1" style="swimlane;fontStyle=1;startSize=30;rounded=1;arcSize=8;dashed=1;dashPattern=6 4;fillColor=#FFEBEE;fontColor=#C62828;strokeColor=#C62828;strokeWidth=2;swimlaneFillColor=#FFFFFF;fontSize=12;collapsible=0;" value="Atribut transaksional tanpa tempat penyimpanan" vertex="1">
+          <mxGeometry height="86" width="340" x="420" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="lost" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;fontStyle=1;fontColor=#C62828;" value="?  qty_detail_penjualan" vertex="1">
+          <mxGeometry height="24" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="lost" style="text;strokeColor=none;fillColor=#FFEBEE;align=left;verticalAlign=middle;spacingLeft=10;fontFamily=Courier New;fontSize=11;fontStyle=1;fontColor=#C62828;" value="?  harga_satuan_detail_penjualan" vertex="1">
+          <mxGeometry height="24" width="340" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="x1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#C62828;" value="tidak bisa di tabel penjualan" vertex="1">
+          <mxGeometry height="24" width="220" x="190" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="x2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#C62828;" value="tidak bisa di tabel barang" vertex="1">
+          <mxGeometry height="24" width="220" x="780" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#C62828;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="294" as="sourcePoint" />
+            <mxPoint x="300" y="278" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#C62828;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="306" as="sourcePoint" />
+            <mxPoint x="880" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akibat_box" parent="1" style="rounded=1;arcSize=6;dashed=1;dashPattern=6 4;fillColor=#FFFFFF;strokeColor=#9CA3AF;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="120" width="1140" x="20" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="akibat" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#374151;spacingLeft=14;spacingRight=14;" value="&lt;b&gt;Akibat fatal:&lt;/b&gt;&lt;br&gt;1. qty_detail_penjualan dan harga_satuan_detail_penjualan tidak punya tabel untuk disimpan.&lt;br&gt;2. Harga saat transaksi tidak terkunci (melanggar AB-04): jika harga_jual_barang berubah, omzet masa lalu ikut berubah.&lt;br&gt;3. KI-01 (omzet total) dan KI-02 (barang terlaris berdasarkan kuantitas) mustahil dihitung." vertex="1">
+          <mxGeometry height="108" width="1140" x="20" y="356" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
