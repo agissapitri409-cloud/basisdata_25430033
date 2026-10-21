@@ -188,6 +188,29 @@ Antisipasi: menggunakan pengkodean FOREIGN KEY ... ON DELETE CASCADE ON UPDATE C
 **Ketidaksesuaian Status dan Denda:**
 Antisipasi: pembatasan nilai status_pinjam dan status_denda dengan tipe ENUM, serta nilai denda yang tidak boleh negatif.
 
+**Struk / Bukti peminjaman buku perpustakaan:**
+
+         PERPUSTAKAAN NUSA CENDEKIA 033
+          Bukti Transaksi Peminjaman
+---------------------------------------
+No. Transaksi  : PJ033-0001
+Tanggal Pinjam : 18-10-2026
+Jatuh Tempo    : 25-10-2026
+Nama Anggota   : Agis Sapitri
+No. Anggota    : AG033-001
+Petugas        : Admin 033
+
+Daftar Buku Dipinjam:
+Dasar-Dasar Sistem Informasi        1 Pcs
+Jaringan Komputer untuk Pemula      1 Pcs
+Statistika Terapan Informatika      1 Pcs
+---------------------------------------
+Total Jenis Buku               3 Item
+Status Peminjaman              Aktif
+---------------------------------------
+              Terima kasih
+
+
 ---
 
 ## 11. Bukti Git
