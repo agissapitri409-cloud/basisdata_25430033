@@ -189,6 +189,7 @@ Antisipasi: menggunakan pengkodean FOREIGN KEY ... ON DELETE CASCADE ON UPDATE C
 Antisipasi: pembatasan nilai status_pinjam dan status_denda dengan tipe ENUM, serta nilai denda yang tidak boleh negatif.
 
 **Struk / Bukti peminjaman buku perpustakaan:**
+```
 
          PERPUSTAKAAN NUSA CENDEKIA 033
           Bukti Transaksi Peminjaman
@@ -209,7 +210,7 @@ Total Jenis Buku               3 Item
 Status Peminjaman              Aktif
 ---------------------------------------
               Terima kasih
-
+```
 
 ---
 
