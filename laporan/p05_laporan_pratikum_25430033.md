@@ -65,10 +65,6 @@ Urutan pembuatan dimulai dari tabel master (anggota, katagori, petugas), dilanju
 
 ![Table Perpustakaan Nusa Cendekia](<image/p05_tabel.png>)
 
-> **[MASUKKAN FOTO 1: HASIL SHOW TABLES]**
->
-> *Masukkan satu screenshot phpMyAdmin yang memperlihatkan database perpus_nusa_cendekia_033 dan seluruh tujuh tabel setelah skrip dijalankan.*
-
 ## 3.3 Penerapan tipe data dan constraint
 
 | **Kolom / atribut**                            | **Tipe data / constraint**  | **Alasan**                                                    |
@@ -85,10 +81,6 @@ Urutan pembuatan dimulai dari tabel master (anggota, katagori, petugas), dilanju
 | status_pinjam, status_denda                    | ENUM + DEFAULT              | Membatasi status pada pilihan yang telah ditentukan.          |
 
 constraint yang terdapat pada ddl antara lain primary key di seluruh tabel; unique untuk nomor anggota, isbn, username, kode peminjaman, nama kategori, dan id_peminjaman pada pengembalian; foreign key untuk semua relasi; check stok \>= 0, jumlah \> 0, tanggal jatuh tempo tidak sebelum tanggal pinjam, dan denda \>= 0; serta default untuk stok, status peminjaman, denda, dan status denda.
-
-> **[MASUKKAN FOTO 2: SHOW CREATE TABLE]**
->
-> *Masukkan satu screenshot yang paling jelas dari SHOW CREATE TABLE peminjaman atau detail_peminjaman. Pastikan terlihat PRIMARY KEY, UNIQUE, CHECK, dan FOREIGN KEY.*
 
 ## 3.4 Pengujian constraint
 
@@ -107,10 +99,6 @@ Pengujian dilakukan dengan memasukkan atau mengubah nilai yang melanggar aturan.
 > VALUES ('ISBN-YANG-SUDAH-ADA','Buku Duplikat',1,1);
 
 hasil yang diharapkan: foreign key menolak id petugas yang tidak ditemukan; check menolak stok negatif; unique menolak isbn duplikat. kode galat yang lazim muncul adalah 1452 untuk foreign key, 4025 untuk check, dan 1062 untuk unique. catat kode galat yang benar-benar tampil pada komputer saat praktikum.
-
-> **[MASUKKAN FOTO 3: HASIL UJI CONSTRAINT]**
->
-> *Satu screenshot hasil uji yang memperlihatkan pesan galat constraint. Jika semua pengujian tidak muat dalam satu layar, pilih bukti yang paling jelas; hasil uji lain dapat dijelaskan dalam teks.*
 
 ## 3.5 ERD fisik proyek
 
